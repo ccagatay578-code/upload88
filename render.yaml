@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: upload88
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: 1
